@@ -7,7 +7,10 @@
 <body>
 
 <script>
-
+//Le formulaire de saisie
+saisie = prompt("Date : yyyy-mm-dd");
+var date = new Date(saisie);
+jourtravaille(date);
 </script>
 
 </body>
