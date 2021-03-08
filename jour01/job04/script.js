@@ -1,19 +1,18 @@
-/*
-function bisextile(annee);
 
-var annee = 2019
-alert(
-    if ((annee % 4 == 0) || (annee % 100 == 0) || (annee % 400 == 0)) {
-        return true;
-    }else if ((annee % 4 == 0) && (annee % 100 != 0)) {
-        return false;
+function bisextile(année)
+{         //On demande la date du jour puis on sélectionne le mois de février de notre année actuelle
+    var jours = new Date(année,2,0).getDate();
+    if( jours == 29)   //Si on est dans l'année ou février comporte 29  jours
+    {
+        document.write(année + ' est bisextile');  //Pour l'écrire sur la page
+        return(true);
     }
-);
-*/
-
-function  bisextile(annee) {
-	prompt (annee % 4 === 0 && annee % 100 > 0) || (annee % 400 === 0) ? annee + return true : annee + return false
+    else
+    {
+        document.write(année + " n'est pas bisextile");
+        return(false);
+    }
 }
 
-alert (bisextile(2019));
+
 

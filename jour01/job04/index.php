@@ -6,5 +6,12 @@
 </head>
 <body>
 
+<script>
+
+var year = prompt("Choississez l'année : "); //prompt sert à rentrer le text dans un formulaire
+var result = bisextile(year);
+alert(result);
+</script>
+
 </body>
 </html>
