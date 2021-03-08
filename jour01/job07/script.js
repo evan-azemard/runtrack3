@@ -38,20 +38,18 @@ function jourtravaille(date)
 
 //Includes détermine si une chaine de caractére est contenue dans une autre et renvoi true / false
 
+    if (jour === "samedi" || jour === "dimanche")
+    {
+        document.write("c'est un week-end")
+        stop()
+    }
 
     if(jourferies.includes(e) === true )
     {
         document.write(d + " est un jour ferié");
-    }
-
-    else if (jourferies.includes(e) === false &&  jour !== "samedi" || jour !== "dimanche" )
+    } else
     {
         document.write(d + " n'est pas un jour ferié");
-    }
-
-    else (jour === "samedi" || jour === "dimanche")
-    {
-        document.write(" car, c'est un week-end")
     }
 
 }
@@ -63,3 +61,7 @@ saisie = prompt("Date : yyyy-mm-dd");
 var date = new Date(saisie);
 
 jourtravaille(date);
+
+
+
+
