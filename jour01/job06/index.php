@@ -9,6 +9,5 @@
 <script>
     fizzbuzz()
 </script>
-
 </body>
 </html>
