@@ -2,9 +2,15 @@
 <html>
 <head>
     <title>Index.php</title>
-    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
+
+<!--<form action="" method="get">
+	Nom: <input type="text" name="nom">
+	<input type="submit" value="Valider">
+</form>-->
+    <textarea name="" id="text" cols="30" rows="10"></textarea>
+    <script type="text/javascript" src="script.js"></script>
 
 </body>
 </html>

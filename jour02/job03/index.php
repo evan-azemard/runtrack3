@@ -5,10 +5,8 @@
 </head>
 <body>
 
-<article>
+<article id="compteur">0</article>
     <button id="button">Compte</button>
-        <p id="click">0</p>
-</article>
     <script type=text/javascript src="script.js"></script>
 
 </body>
