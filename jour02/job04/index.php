@@ -9,7 +9,7 @@
 	Nom: <input type="text" name="nom">
 	<input type="submit" value="Valider">
 </form>-->
-    <textarea name="" id="text" cols="30" rows="10"></textarea>
+    <textarea  id="keylogger" cols="30" rows="10"></textarea>
     <script type="text/javascript" src="script.js"></script>
 
 </body>

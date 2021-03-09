@@ -7,11 +7,23 @@ $('form').keypress(function(e){
 });
 */
 
+// le textarea
+/*
 var text = document.getElementById('text');
 
 document.addEventListener('keydown', function (touche)
 {
     var key = event.key;
-    text.value += key;
+
+
+    text.value += event.key;
 
 })
+*/
+
+
+document.addEventListener("keydown", function(e) {
+
+    var text = document.getElementById("keylogger");
+    text.value += e.key;
+});
