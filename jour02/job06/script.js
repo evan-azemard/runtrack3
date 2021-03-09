@@ -1,37 +1,23 @@
-document.addEventListener("keydown", function(e){
-    easter = true;
-
-    if(typeof(code) != "undefined")
+var string = "";  //Contient rien
+var b = document.body; //Contient le body
+window.addEventListener('keydown', function(event)  //Permet de retenir les touche appyé en mémoire
+{
+    var key = event.key; //Contient la touche
+    string += key; //ajoute en plus la touche cliqué
+    if(string === "ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightba") //Si c'est le même
     {
-        if(code.length < 9)
-        {
-            code.push(e.key);
-        }
-        else
-        {
-            ref = ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a"];
-            for(i=0;i<9;i++)
-            {
-                if(code[i] != ref[i])
-                {
-                    easter = false;
-                    break;
-                }
-            }
+        var footer = document.createElement('footer');
+        b.prepend(footer);//Car on le veut  que le body exsite uniquement si i rentre dans la condition
+        var main = document.createElement('main');
+        b.prepend(main);
+        var header = document.createElement('header');
+        var title = document.createTextNode('La Plateforme.io');
+        b.prepend(header);
+        header.append(title);
+        main.append(titlemain);
+        footer.append(titlefooter);
+    }else {
 
-            if(easter)
-            {
-                link = document.createElement("link");
-                link.type="text/css";
-                link.rel="stylesheet";
-                link.href="style.css";
 
-                document.head.appendChild(link);
-            }
-        }
     }
-    else
-    {
-        code = [];
-    }
-});
+})

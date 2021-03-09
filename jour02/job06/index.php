@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    <title>Index.php</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Runtrack 3 - Jour 2 - Job 6</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 </body>
-<script type="text/javascript" src="script.js"></script>
 </html>
+<script src="script.js"></script>
