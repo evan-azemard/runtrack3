@@ -1,3 +1,4 @@
+/*
 
 const article = "<article><p>“L'important n'est pas la chute, mais l'atterrissage.”</p></article>";
 
@@ -6,8 +7,6 @@ const article2 = "<article><p>“L'important n'est pas la chute, mais l'atterris
 
 
 const but = "<button style='background-color: red' onclick='javascript:location.reload();'> </button>"
-
-
 
 
 function showhide(){
@@ -19,7 +18,7 @@ function hide(){
     document.write(article2)
 }
 
-
+*/
 
 
 //Si tu clique sur le button
@@ -31,7 +30,6 @@ function hide(){
 //On envoie le premier button
 
 
-
 //Le button à une valu="1"
 
 //Si tu clique tu augmente la value de plus 1
@@ -41,3 +39,16 @@ function hide(){
 //
 
 
+function showhide()
+{
+    article = document.getElementsByTagName("article")[0];
+    if(article.style.display !== 'none')
+    {
+        article.style.display = 'none';
+    }
+    else
+    {
+        article.style.display = 'block';
+    }
+}
+document.getElementById("button").onclick = showhide;
