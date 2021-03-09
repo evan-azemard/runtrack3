@@ -6,5 +6,7 @@
 </head>
 <body>
 
+<button id="button"onclick="showhide()" ></button>
+
 </body>
 </html>
