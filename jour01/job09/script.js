@@ -35,6 +35,7 @@ function asc(chif) {
     }
 }
 
+
 i = 0
 if (i < chiff){
     i++
