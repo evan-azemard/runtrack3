@@ -1,5 +1,4 @@
 
-
 function citation(){
     //On récupére le contenue de l'article
     var text = document.getElementById('citation').textContent;
