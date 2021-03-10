@@ -1,21 +1,17 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Runtrack 3 - Jour 3 - Job 2</title>
-</head>
-<body>
-    <div id="melangees">
+<html>
+	<head>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+<body style="display:flex; flex-direction:column;">
 
-    </div>
+    <div id="melangee"></div>
+    <div id="melangees" style="display:flex;border:1px solid black;"></div>
+    <div id="rangees" style="display:flex;border:1px solid black;"></div>
+
+    <button id="button" >Mélanger</button>
 
 
-    <button id="button">Mélanger</button>
-    <div id="rangees">
-
-    </div>
-</body>
+		<script src="script.js"></script>
+	</body>
 </html>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="script.js"></script>
