@@ -1,17 +1,4 @@
-/*
-function showhide()
-{
-    article = document.getElementsByTagName("article")[0];
-    if(article.style.display !== 'none')
-    {
-        article.style.display = 'none';
-    }
-    else
-    {
-        article.style.display = 'block';
-    }
-}
-document.getElementById("button").onclick = showhide;*/
+
 
 
 //Au moment ou tu clique sur le button

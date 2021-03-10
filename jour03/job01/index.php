@@ -10,8 +10,8 @@
 
 <button id="button">Affiche</button>
 <button id="buttonHide">Cache</button>
-<!--<button id="buttonDivOnToTwo">Envoie de la div 1 dans la div 2</button>
--->
+
+
 <div id="mydiv"></div>
 
 
