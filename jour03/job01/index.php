@@ -8,6 +8,16 @@
 </head>
 <body>
 
+<button id="button">Affiche</button>
+<button id="buttonHide">Cache</button>
+<!--<button id="buttonDivOnToTwo">Envoie de la div 1 dans la div 2</button>
+-->
+<div id="mydiv"></div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="script.js"></script>
+
+
 </body>
 </html>
-<script src="script.js"></script>
