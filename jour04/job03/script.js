@@ -3,15 +3,14 @@
 $("#filtrer").click(function() {
 
                 var id = $("#id").val().toString();
+                var name = $("#name").val().toString();
                  $.ajax({
                      type: "GET", url: "pokemon.json", dataType: "text",
                      success: function (data) {
 
                          res = JSON.parse(data);
 
-
-                         console.log(res[id])
-
+                         $('body').append("<p>"+res[id][name]+"</p>");
                      }
 
              })
@@ -19,6 +18,14 @@ $("#filtrer").click(function() {
 
 
 
+/*
+function jsonValueKey(re, name)
+{
+    return res[name];
+}*/
+
+
+//Si tu demande le name on te donne le name
 
 
                          /*   $("#filtrer").click(function() {
