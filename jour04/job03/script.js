@@ -1,6 +1,16 @@
+        $("#filtrer").click(function(){
+          var id = $("#id").val();
+          var name = $("#name").val();
+          alert(id);
+          alert(name);
+        });
+
+
+/*
 function slectionne(string,key) {
 var id = $('#id')
 var name = $('#name')
+
     console.log(id)
     $.ajax({
         type: "GET",
@@ -18,7 +28,7 @@ var name = $('#name')
             document.write(b);
         }
     });
-}
+}*/
 
 
 
