@@ -9,12 +9,12 @@
 <body style="display: flex; justify-content: center;">
 
 <form style="display: flex; flex-direction: column; width: 20%; margin-top: 20%;">
-    <label for="id">id</label>
-        <input type="text"  id="id" name="id" placeholder=" rentrer id" required/>
-    <label for="name">name</label>
+    <label for="id" style="text-align: center; margin-bottom: 1%; font-size: 2.3vh;">Rentrer id</label>
+        <input type="text"  id="id" name="id" placeholder=" rentrer id" required style="margin-bottom: 8%"/>
+    <label for="name" style="text-align: center; margin-top: -1%; font-size: 2.3vh;">Rentrer name en Français</label>
         <input type="text"   id="name" name="name" placeholder="rentrer name" required/>
 
-        <input type="button" id="filtrer" value="filtrer"></inputty>
+        <input type="button" id="filtrer" value="filtrer" style="margin-top: 4%;"></inputty>
 </form>
 
 

@@ -1,34 +1,40 @@
-        $("#filtrer").click(function(){
-          var id = $("#id").val();
-          var name = $("#name").val();
-          alert(id);
-          alert(name);
-        });
+
+
+$("#filtrer").click(function() {
+
+                var id = $("#id").val().toString();
+                 $.ajax({
+                     type: "GET", url: "pokemon.json", dataType: "text",
+                     success: function (data) {
+
+                         res = JSON.parse(data);
+
+
+                         console.log(res[id])
+
+                     }
+
+             })
+    })
+
+
+
+
+
+                         /*   $("#filtrer").click(function() {
+                                    var val = json();
+                                    console.log(value)
+                            })*/
 
 
 /*
-function slectionne(string,key) {
-var id = $('#id')
-var name = $('#name')
+$("#filtrer").click(function() {
+/!*
+    var key = $("#id").val();
+*!/
+    var date = jsonValueKey("pokemon.json")
 
-    console.log(id)
-    $.ajax({
-        type: "GET",
-        url: "pokemon.json",
+    console.log(date);
 
-        success: function (data) {
-            // affiche le contenu du fichier dans le conteneur dédié :
-            let json = data
-
-
-            let value = JSON.parse(string);
-
-           var b =  value[key];
-
-            document.write(b);
-        }
-    });
-}*/
-
-
-
+})
+*/
