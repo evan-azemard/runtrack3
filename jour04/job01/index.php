@@ -8,8 +8,7 @@
 </head>
 <body>
 
-<button id="button"></button>
-
+<button id="button" onclick="lire_fichier()"></button>
 
 <script type="text/javascript" src="script.js"></script>
 
