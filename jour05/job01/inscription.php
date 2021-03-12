@@ -14,19 +14,20 @@ function connectPdo(){
 
 	return $pdo;
 }
+
 	if(isset($_POST["nom"]) && isset($_POST["prenom"]) && isset($_POST["email"]) && isset($_POST["password"]))
 	{
      /* if (!empty($db = connectPdo(); $sel = $db->prepare("select * from utilisateurs where prenom=? limit 1");$sel->execute($_POST["prenom"]);));*/
         $db = connectPdo();
 		if(!empty($db->query("SELECT * FROM utilisateurs WHERE prenom = '".$_POST["prenom"]."'")->fetch())) //Si un ustilisateurs est dèjà enregistré
 		{
-			echo "Prenom  dèjà utilisé ";
+			echo "er1";
 		}elseif(!empty($db->query("SELECT * FROM utilisateurs WHERE nom= '".$_POST["nom"]."'")->fetch())) //Si un ustilisateurs est dèjà enregistré
 		{
-			echo "nom  dèjà utilisé ";
+			echo "er2";
 		}elseif(!empty($db->query("SELECT * FROM utilisateurs WHERE email= '".$_POST["email"]."'")->fetch())) //Si un ustilisateurs est dèjà enregistré
 		{
-			echo "errMail";
+			echo "er3";
 		} else//Si c'est belle est bien un nouveaux utilisateurs
 		{
 			if ($db->query("INSERT INTO `utilisateurs`(`nom`, `prenom`, `email`, `password`) VALUES ('".$_POST["nom"]."', '".$_POST["prenom"]."', '".$_POST["email"]."', '".password_hash($_POST["password"], PASSWORD_BCRYPT)."')"))

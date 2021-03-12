@@ -1,5 +1,10 @@
 $(document).ready( function() //Pour démarer le script en dernier
+
 	{
+
+
+			$('#f_connexion').css("display","none");
+
 		$('#b_inscription').click( function()  //Si tu clique sur le button inscription
 		{
 			form = $('#f_inscription'); //Form c 'est le formulaire d'inscription
@@ -9,8 +14,9 @@ $(document).ready( function() //Pour démarer le script en dernier
 			{
 				form.css("display","flex");  //On atribut du flex pour le voir
 			}
-
 		});
+
+
 
 		$('#b_connexion').click( function()
 		{
@@ -36,14 +42,12 @@ $(document).ready( function() //Pour démarer le script en dernier
 			c_password = $('#r_password').val();
 
 			length = /.{8,30}/;
-			 symbol = /\W/;
-			 letter = /\w/;
-			 digit = /\d/;        /* une forme de regex pour js */
+			 s = /\W/; d = /\d/;        /* une forme de regex pour js */
 /*
 			if (preg_match('%^(?=[^A-Z]*+.)(?=[^a-z]*+.)(?=[^0-9]*+.)(?=[^\W]*+.)%',password) ){
-*/
-			 //exec pour dire que l'on utilise du regexp
-			if(length.exec(password) == null || symbol.exec(password) == null || letter.exec(password) == null || digit.exec(password)  == null)
+*/          //exec pour dire que l'on utilise du regexp
+
+			if(length.exec(password) == null || s.exec(password) == null ||d.exec(password)  == null)
 			{
 				$("#passwordError").css("display","block");
 				return false;
@@ -60,8 +64,7 @@ $(document).ready( function() //Pour démarer le script en dernier
 			}
 
 			//Pour prendre les post du form et aller dans la page inscription.php
-			$.post(
-				"inscription.php",
+			$.post("inscription.php",
 				{
 					nom: $("#nom").val(),
 					prenom: $('#prenom').val(),
@@ -75,28 +78,26 @@ $(document).ready( function() //Pour démarer le script en dernier
 						$("#f_inscription").css("display", "none");
 						$("#f_connexion").css("display", "flex");
 					}
-					else if(data === "errMail")
+					else if(data === "er1")
+					{
+						$("main").prepend($("<p></p>").text("Le nom est dèjà pris.")); //Tu push sur le main une balise p
+					}else if(data === "er2")
+					{
+						$("main").prepend($("<p></p>").text("Le prenom est dèjà pris.")); //Tu push sur le main une balise p
+					}else if(data === "er3")
 					{
 						$("main").prepend($("<p></p>").text("Le mail est déja pris.")); //Tu push sur le main une balise p
 					}
-				},
-				'text'
+				}
 			);
 		});
-
-
-
-
-
-
 
 		$("#connexion").click(function()
 		{
 
-			$.post(
-				"connexion.php",
+			$.post("connexion.php",
 				{
-					email: $('#cn_prenom').val(),
+					prenom: $('#cn_prenom').val(),
 					password: $('#cn_password').val()
 				},
 				function(data){

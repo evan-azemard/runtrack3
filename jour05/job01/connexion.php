@@ -20,7 +20,7 @@
 
         $db = connectPdo();
 
-            $useur = $db->query("SELECT * FROM utilisateurs WHERE nom = '".$_POST["nom"]."'")->fetch(PDO::FETCH_ASSOC); //Mes dans un tableaux le select
+            $useur = $db->query("SELECT * FROM utilisateurs WHERE prenom = '".$_POST["prenom"]."'")->fetch(PDO::FETCH_ASSOC); //Mes dans un tableaux le select
 
             if(password_verify($_POST["password"], $useur["password"]))
 			{
@@ -134,7 +134,7 @@ $(document).ready(function(){
     $("#submit").click(function{
 
         $.post(
-            'connexion.php', // Un script PHP que l'on va créer juste après
+            'connexion.php',
             {
                 nom : $("#nom").val(),
                 password : $("#password").val()
@@ -142,10 +142,10 @@ $(document).ready(function(){
                 email : $("#email").val()
                 c_password : $("#c_password").val()
             },
-            function(data){ // Cette fonction ne fait rien encore, nous la mettrons à jour plus tard
+            function(data){
             },
 
-            'text' // Nous souhaitons recevoir "Success" ou "Failed", donc on indique text !
+            'text'
          );
 
     });
