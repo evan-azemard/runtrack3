@@ -19,7 +19,6 @@ $db = connectPdo();
  $sel =$db->prepare("SELECT * FROM utilisateurs");
  $sel->execute();
  $res = $sel->fetchAll();
-
  foreach ($res as $row)
 
  echo json_encode($row)
