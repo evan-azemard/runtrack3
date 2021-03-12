@@ -36,9 +36,9 @@ $(document).ready( function() //Pour démarer le script en dernier
 			c_password = $('#r_password').val();
 
 			length = /.{8,30}/;
-			let symbol = /\W/;
-			let letter = /\w/;
-			let digit = /\d/;        /* une forme de regex pour js */
+			 symbol = /\W/;
+			 letter = /\w/;
+			 digit = /\d/;        /* une forme de regex pour js */
 /*
 			if (preg_match('%^(?=[^A-Z]*+.)(?=[^a-z]*+.)(?=[^0-9]*+.)(?=[^\W]*+.)%',password) ){
 */
@@ -59,6 +59,7 @@ $(document).ready( function() //Pour démarer le script en dernier
 				return false;
 			}
 
+			//Pour prendre les post du form et aller dans la page inscription.php
 			$.post(
 				"inscription.php",
 				{
@@ -74,7 +75,7 @@ $(document).ready( function() //Pour démarer le script en dernier
 						$("#f_inscription").css("display", "none");
 						$("#f_connexion").css("display", "flex");
 					}
-					else if(data === "Email dèjà utilisé")
+					else if(data === "errMail")
 					{
 						$("main").prepend($("<p></p>").text("Le mail est déja pris.")); //Tu push sur le main une balise p
 					}

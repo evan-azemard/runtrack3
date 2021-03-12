@@ -26,7 +26,7 @@ function connectPdo(){
 			echo "nom  dèjà utilisé ";
 		}elseif(!empty($db->query("SELECT * FROM utilisateurs WHERE email= '".$_POST["email"]."'")->fetch())) //Si un ustilisateurs est dèjà enregistré
 		{
-			echo "Email dèjà utilisé";
+			echo "errMail";
 		} else//Si c'est belle est bien un nouveaux utilisateurs
 		{
 			if ($db->query("INSERT INTO `utilisateurs`(`nom`, `prenom`, `email`, `password`) VALUES ('".$_POST["nom"]."', '".$_POST["prenom"]."', '".$_POST["email"]."', '".password_hash($_POST["password"], PASSWORD_BCRYPT)."')"))
@@ -41,7 +41,7 @@ function connectPdo(){
 	}
 	else
 	{
-		echo "pas de donné";
+		echo "err";
 	}
 ?>
 
