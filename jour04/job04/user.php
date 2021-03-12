@@ -1,7 +1,6 @@
 
 <?php
 
-
 function connectPdo(){
 
 	$servname = "localhost"; $dbname = "utilisateurs"; $user = "root"; $pass = "";
@@ -21,6 +20,7 @@ $db = connectPdo();
  $sel->execute();
  $res = $sel->fetchAll();
 
+ foreach ($res as $row)
 
-
+ echo json_encode($row)
  ?>
