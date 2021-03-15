@@ -28,59 +28,85 @@
 
 
 
-
-        //   Si c plus petit que 1599px  on atribut du flex pour faire 2 lignes
-
+        // Si c plus petit que 1599px  on atribut du flex pour faire 1 ligne
 
 
-
-    /*    function myFunction(width){
+     /*   function myFunction(width){
             if (width.matches){
-                $(".dd").css("display", "flex");
+                 $(".dd").css("display","flex", "flex-direction", "row");
+                 $("#droit").css("display","flex", "flex-direction", "row");
             }
         }
 
-        var width = window.matchMedia("(max-width: 1599px)");
+        var width = window.matchMedia("(min-width: 1600px)");
 
         myFunction(width)
 
-        width.addListener(myFunction)*/
+        width.addListener(myFunction)
 
 
-         // Si c plus petit que 768 = une colone
+*/
 
 
-       /* function myFunctionA(ligne){
+
+         // Si c entre 768 et 1599 on veut 2 colonne
+
+
+     /*   function myFunctionA(ligne){
             if (ligne.matches){
                 $(".dd").css("display","flex");
                 $("#droit").css("flex-direction","column");
 
             }
-        }
+        }*/
 
-        var ligne = window.matchMedia("(min-width: 767px)");
+      /*  var ligne = window.matchMedia("(min-width: 768px)");
 
         myFunctionA(ligne)
 
         ligne.addListener(myFunctionA)
 
 
+*/
 
-
-
-         function myFunctionAB(double){
+    /*     function myFunctionAB(double){
             if (double.matches){
-                $(".dd").css("display","flex");
-                $("#droit").css("display","flex");
+
 
             }
         }
 
-        var double = window.matchMedia("(min-width: 769px)");
+        var double = window.matchMedia("(max-width: 767px)");
 
         myFunctionAB(double)
 
-        double.addListener(myFunctionAB)
-*/
+        double.addListener(myFunctionAB)*/
+
+
+
+
+
+
+
+
+
+
+     /*   if (ligne.matches)
+        {
+            $(".dd").css("display","flex");
+            $("#droit").css("flex-direction","column");
+        } else if (width.matches)
+        {
+            $(".dd").css("display","flex", "flex-direction", "row");
+            $("#droit").css("display","flex", "flex-direction", "row");
+        } else if (double.matches)
+        {
+             $(".dd").css("display","none");
+             $("#droit").css("display","none");
+        }
+        var ligne = window.matchMedia("(min-width: 768px)"); */ /*2 colonne*/
+
+
+
 
     </script>
