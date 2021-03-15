@@ -1,10 +1,8 @@
 <?php
 	if(!isset($_SESSION["id"]))
 	{
-		if(isset($_POST["prenom"]) && isset($_POST["password"]))
-		{
 
-            function connectPdo(){
+	       function connectPdo(){
 
             $servname = "localhost"; $dbname = "utilisateurs"; $user = "root"; $pass = "";
 
@@ -17,6 +15,10 @@
 
             return $pdo;
         }
+
+
+		if(isset($_POST["prenom"]) && isset($_POST["password"]))
+		{
 
         $db = connectPdo();
 

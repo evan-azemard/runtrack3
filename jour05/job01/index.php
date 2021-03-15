@@ -68,8 +68,8 @@
 
                     <form  method="post" action="" id="f_connexion" style="display: flex; flex-direction: column; width: 20%; margin-top: 20%;">
 
-                        <label for="cn_nom">Nom</label>
-                        <input type="text" id="cn_prenom" name="nom"/>
+                        <label for="cn_prenom">prenom</label>
+                        <input type="text" id="cn_prenom" name="prenom"/>
 
                         <label for="cn_password">Password</label>
                         <input type="password" id="cn_password" name="password"/>

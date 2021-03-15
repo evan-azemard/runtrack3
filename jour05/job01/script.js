@@ -100,9 +100,10 @@ $(document).ready( function() //Pour démarer le script en dernier
 					prenom: $('#cn_prenom').val(),
 					password: $('#cn_password').val()
 				},
-				function(data){
+				function(useur){
 					$("#f_connexion").css("display", "none");
-					$("body").prepend($('<p></p>').text("Bonjour "+data["nom"]));
+					$("main").prepend($('<p></p>').text("Bonjour "+useur["prenom"]));
+					console.log(useur["prenom"])
 				},
 				"json"
 			);
