@@ -1,8 +1,9 @@
 
-/*.droit{
+/*
+.droit{
     display: flex;
-    flex-direction: row;
-}*/
+}
+*/
 
 
 /*.deuxlignes{
@@ -10,9 +11,14 @@
 }*/
 
 
-/*deuxlignes = 2 colone .  Sans class = 1 colone */
+/*deuxlignes = 2 colone .  Sans class = 1 colone  et une ligne = .droit*/
 
+/*SI C PLUS GRANG QUE 1599   class .droit
 
+Si  c plus petit que 768   pas de class
+
+Si c plus petit que 1599   class.deuxlignes
+*/
 
 .section{
     background-color: #88c1d0;
