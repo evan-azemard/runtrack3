@@ -9,7 +9,20 @@
 
 <body class="body">
 
-<div id="droit">
+
+  <section class="section"> section 1 </section>
+  <section class="section"> section 2 </section>
+  <section class="section"> section 3 </section>
+  <section class="section"> section 4 </section>
+
+
+
+
+
+
+
+
+<!--<div id="droit">
     <div  class="dd">
         <section class="section"> section 1 </section>
         <section class="section"> section 2 </section>
@@ -18,7 +31,9 @@
         <section class="section"> section 3 </section>
         <section class="section"> section 4 </section>
     </div>
-</div>
+</div>-->
+
+
 
 
 </body>
@@ -84,14 +99,8 @@
 
 
 
-
-
-
-
-
-
-
-     /*   if (ligne.matches)
+/*
+        if (ligne.matches)
         {
             $(".dd").css("display","flex");
             $("#droit").css("flex-direction","column");
@@ -99,13 +108,14 @@
         {
             $(".dd").css("display","flex", "flex-direction", "row");
             $("#droit").css("display","flex", "flex-direction", "row");
-        } else if (double.matches)
+        } else if (colone.matches)
         {
              $(".dd").css("display","none");
              $("#droit").css("display","none");
         }
-        var ligne = window.matchMedia("(min-width: 768px)"); */ /*2 colonne*/
-
+        var ligne = window.matchMedia("(min-width: 768px)");  /!*2 colonne*!/
+        var width = window.matchMedia("(min-width: 1600px)"); /!*1 ligne*!/
+        var colone = window.matchMedia("(max-width: 767px)");*/ /*1 Colonne*/
 
 
 
