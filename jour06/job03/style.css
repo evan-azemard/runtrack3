@@ -1,10 +1,11 @@
 
-/*
-.droit{
+/*.droit{
     display: flex;
+    flex-direction: row;
+}*/
+body{
+    flex-direction: column;
 }
-*/
-
 
 /*.deuxlignes{
         display: flex;
