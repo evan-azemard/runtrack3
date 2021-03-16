@@ -4,10 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <title>Hello, world!</title>
   </head>
   <body style="background-color: #DCDCDC">
+
+
   <main>
+
       <!--La navbar-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
@@ -18,7 +22,7 @@
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Acceuil</a>
+          <a class="nav-link active" href="https://laplateforme.io/">Acceuil</a>
         </li>
         <li class="nav-item">
           <a class="nav-link " aria-current="page" href="#">Units</a>
@@ -34,6 +38,8 @@
     </div>
   </div>
 </nav>
+
+
  <!--Le titre-->
 <div style="text-align: center">
     <p class="display-4">LaPlateform_</p>
@@ -44,10 +50,28 @@
   <img style="height: 15vh;" src="https://th.bing.com/th/id/Re62adabb906c6cbd6cf153de30bf5d80?rik=XkJ2enDC5Z8hcg&riu=http%3a%2f%2fpulmofit.com%2fuploads%2fgallery%2f43d0eddbfca46173d3ff28ed9adbbb6b.jpg&ehk=ld6YFl0UsZed2moDUiF3adQd63FdXWiKPAFjy8Q60co%3d&risl=&pid=ImgRaw" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Un papillon</h5>
-    <p class="card-text">Un papillon c'est comme uen chenille, mais avec des ailes.<br> Ne pas ingerer </p>
+    <p class="card-text">Un papillon c'est comme une chenille, mais avec des ailes.<br> Ne pas ingerer </p>
     <div class="d-grid gap-2 col-15 mx-auto">
-      <button class="btn btn-primary" type="button">Commander votre propre papillon</button>
+      <button class="btn btn-primary" type="button"   data-bs-toggle="modal" data-bs-target="#staticBackdrop">Commander votre propre papillon</button>
     </div>
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Papillon</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h1>Voulez vous acheter ce papillon qui est une espèce protégé et illégal à l'achat ? </h1>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Valider</button>
+      </div>
+    </div>
+  </div>
+</div>
   </div>
 </div>
 <!--Le menu au centre-->
@@ -58,33 +82,15 @@
     <p class="lead"> Le sens le plus courant désigne notre planète, la Terre, avec ses habitants, et son environnement plus ou moins naturel.</p>
   <hr class="my-4">
   <p>Le sens étendu désigne l'univers dans son enssemble.</p>
-    <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="Dismissible popover" data-bs-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
+    <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="Dismissible popover" data-bs-content="And here's some amazing content. It's very engaging. Right?">Rebooter le Monde</a>
 <div class="spinner-border text-info" role="status">
   <span class="visually-hidden"></span>
 </div>
     <div style="display: flex; flex-direction: row-reverse">
-        <nav aria-label="Page navigation example">
-              <ul class="pagination">
-                <li class="page-item"> <!--barre de chargement pour la souris-->
-                  <a class="page-link" href="#" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                  </a>
-                </li> <!--Barre-->
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <div class="page-item">
-                </div>
-                  <a class="page-link" href="#" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                  </a>
-                </li>
-              </ul>
-        </nav>
+
     </div>
 </div>
     </div>
-
         <!--Les onglet-->
         <div>
             <ul class="list-group">
@@ -174,6 +180,5 @@
       </div>
       </section>
   </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
   </body>
 </html>
