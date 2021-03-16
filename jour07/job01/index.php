@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-    <title>Hello, world!</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+      <title>Hello, world!</title>
   </head>
   <body style="background-color: #DCDCDC">
 
@@ -77,16 +79,61 @@
 <!--Le menu au centre-->
     <div style="background-color: #E9ECEF; width: 70vw; padding-left: 2%; padding-right: 2%; padding-top: 3.5%"> <div class="jumbotron">
   <h1 class="display-4">Bonjour, monde!</h1>
-  <p class="lead">Il existe plusieurs vision du terme :</p>
-    <p class="lead">Le monde est la matiere, l'espace et les phénomènes qui nous sont accessibles par le sens, l'experience ou la raison.</p>
-    <p class="lead"> Le sens le plus courant désigne notre planète, la Terre, avec ses habitants, et son environnement plus ou moins naturel.</p>
+  <p class="lead" id="p1">Il existe plusieurs vision du terme : <br><br>
+    Le monde est la matiere, l'espace et les phénomènes qui nous sont accessibles par le sens, l'experience ou la raison.<br><br>
+      Le sens le plus courant désigne notre planète, la Terre, avec ses habitants, et son environnement plus ou moins naturel.</p>
+
+            <!--Les citations-->
+            <p class="lead" id="p2">
+                Eldon Tyrell : Le commerce est notre seul but chez Tyrell. Plus humain que l'humain est notre devise.
+            </p>
+
+
+            <p class="lead" id="p3">
+                Rick Deckard : Secouée ? Moi aussi. Je m'y fais pas. Ça fait partie du business.
+                Rachel : Je ne suis pas dans le business. C'est moi le business.
+            </p>
+
+
+            <p class="lead" id="p4">
+                Roy Batty : Quelle expérience de vivre dans la peur ! Voilà ce que c'est que d'être un esclave.
+            </p>
+
+
+
+
+
+
+
+
+
+
   <hr class="my-4">
   <p>Le sens étendu désigne l'univers dans son enssemble.</p>
-    <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="Dismissible popover" data-bs-content="And here's some amazing content. It's very engaging. Right?">Rebooter le Monde</a>
+            <button tabindex="0"  id="buttonalpha" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="Dismissible popover" data-bs-content="And here's some amazing content. It's very engaging. Right?">Rebooter le Monde!</button>
 <div class="spinner-border text-info" role="status">
   <span class="visually-hidden"></span>
 </div>
     <div style="display: flex; flex-direction: row-reverse">
+             <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li> <!--Barre-->
+                  <button class="page-link page-item"  id="parabutton1">1</button>
+                  <button class="page-link page-item"  id="parabutton2">2</button>
+                  <button class="page-link page-item"  id="parabutton3">3</button>
+                  <button class="page-link page-item"  id="parabutton4">4</button>
+                <div class="page-item">
+                </div>
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+        </nav>
 
     </div>
 </div>
@@ -157,7 +204,6 @@
 
         </div>
 
-        <div>
             <!-- affichage form connexion -->
             <form>
                 <div class="form-group"  style="width: 15vw;">
@@ -180,5 +226,7 @@
       </div>
       </section>
   </main>
+              <script type="text/javascript" src="script.js"></script>
+
   </body>
 </html>
