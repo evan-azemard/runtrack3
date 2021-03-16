@@ -101,14 +101,6 @@
 
 
 
-
-
-
-
-
-
-
-
   <hr class="my-4">
   <p>Le sens étendu désigne l'univers dans son enssemble.</p>
             <button tabindex="0"  id="buttonalpha" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="Dismissible popover" data-bs-content="And here's some amazing content. It's very engaging. Right?">Rebooter le Monde!</button>

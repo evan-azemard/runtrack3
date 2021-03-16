@@ -1,19 +1,16 @@
 
 	$('#p1').css("display","none");
 
-		$('#parabutton1').click( function()  //Si tu clique sur le button
+		$('#parabutton1').click( function()
 		{
 
-				para = $('#para')
 
-				para.empty()
-
-
-
-			p1 = $('#p1'); //Form c 'est le formulaire d'inscription
+			p1 = $('#p1');
 			$('#p2').css("display","none");  //On rend invisible tout les autres
 			$('#p3').css("display","none");
 			$('#p4').css("display","none");
+			$('#para').css("display","none");
+
 
 			if(p1.css("display")=== 'none') //Si le paragraphe etait sur la position invisible, tu le rend visible
 			{
@@ -25,45 +22,44 @@
 
 	$('#p2').css("display","none");
 
-		$('#parabutton2').click( function()  //Si tu clique sur le button
+		$('#parabutton2').click( function()
 		{
 
-				para = $('#para')
 
-				para.empty()
-
-
-
-			p2 = $('#p2'); //Form c 'est le formulaire d'inscription
-			$('#p1').css("display","none");  //On rend invisible tout les autres
+			p2 = $('#p2');
+			$('#p1').css("display","none");
 			$('#p3').css("display","none");
 			$('#p4').css("display","none");
+			$('#para').css("display","none");
 
-			if(p2.css("display")=== 'none') //Si le paragraphe etait sur la position invisible, tu le rend visible
+			if(p2.css("display")=== 'none')
 			{
-				p2.css("display","flex");  //On atribut du flex pour le voir
+				p2.css("display","flex");
 			}
 		});
 
 
 		$('#p3').css("display","none");
 
-		$('#parabutton3').click( function()  //Si tu clique sur le button
+		$('#parabutton3').click( function()
 		{
+
 
 				para = $('#para')
 
 				para.empty()
 
 
-			p3 = $('#p3'); //Form c 'est le formulaire d'inscription
-			$('#p2').css("display","none");  //On rend invisible tout les autres
+
+			p3 = $('#p3');
+			$('#p2').css("display","none");
 			$('#p1').css("display","none");
 			$('#p4').css("display","none");
+			$('#para').css("display","none");
 
-			if(p3.css("display")=== 'none') //Si le paragraphe etait sur la position invisible, tu le rend visible
+			if(p3.css("display")=== 'none')
 			{
-				p3.css("display","flex");  //On atribut du flex pour le voir
+				p3.css("display","flex");
 			}
 		});
 
@@ -71,20 +67,23 @@
 
 		$('#p4').css("display","none");
 
-		$('#parabutton4').click( function()  //Si tu clique sur le button
+		$('#parabutton4').click( function()
 		{
-				para = $('#para')
 
-				para.empty()
 
-			p4 = $('#p4'); //Form c 'est le formulaire d'inscription
-			$('#p2').css("display","none");  //On rend invisible tout les autres
+
+
+
+			p4 = $('#p4');
+			$('#p2').css("display","none");
 			$('#p3').css("display","none");
 			$('#p1').css("display","none");
+			$('#para').css("display","none");
 
-			if(p4.css("display")=== 'none') //Si le paragraphe etait sur la position invisible, tu le rend visible
+
+			if(p4.css("display")=== 'none')
 			{
-				p4.css("display","flex");  //On atribut du flex pour le voir
+				p4.css("display","flex");
 			}
 		});
 
@@ -96,17 +95,26 @@
 
 $('#buttonalpha').click( function()
 {
+		para = $('#para')
 
-	para = $('#para')
+		if(para.css("display")=== 'none')
+				{
+					para.css("display","flex");
+				}
 	p1 = $('#p1')
 	p2 = $('#p2')
 	p3 = $('#p3')
 	p4 = $('#p4')
 	para.empty()
-	p1.empty()
-	p2.empty()
-	p3.empty()
-	p4.empty()
+
+
+
+	$('#p1').css("display","none");
+	$('#p2').css("display","none");  //On rend invisible tout les autres
+	$('#p3').css("display","none");
+	$('#p4').css("display","none");
+
+
 	function text() {
 
 	}
