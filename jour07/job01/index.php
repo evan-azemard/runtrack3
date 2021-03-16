@@ -87,7 +87,7 @@
             <p class="lead" id="p2">
                 Eldon Tyrell : Le commerce est notre seul but chez Tyrell. Plus humain que l'humain est notre devise.
             </p>
-
+                <p id="para" class="lead para"></p>
 
             <p class="lead" id="p3">
                 Rick Deckard : Secouée ? Moi aussi. Je m'y fais pas. Ça fait partie du business.
@@ -98,6 +98,7 @@
             <p class="lead" id="p4">
                 Roy Batty : Quelle expérience de vivre dans la peur ! Voilà ce que c'est que d'être un esclave.
             </p>
+
 
 
 
