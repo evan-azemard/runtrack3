@@ -170,4 +170,45 @@ $('#11').click( function(){
 */
 
 
+$('#bM').click( function()
+{
+
+
+	 val = 30;
+    bar = $('.barre').width();
+
+    console.log(bar)
+
+    $('.barre').width(bar-val);
+
+
+
+	/*bar = $('.progress');
+
+	valeur = document.getElementById('.progress').offsetWidth
+
+	console.log(valeur)
+	bar.css("width", "1000px")
+
+	 val = bar.style(width)
+
+	console.log(val)*/
+/*	val += 30*/
+
+})
+
+
+$('#bp').click( function() {
+
+
+	val = 30;
+	bar = $('.barre').width();
+
+	console.log(bar)
+
+	$('.barre').width(bar + val);
+
+})
+
+
 
