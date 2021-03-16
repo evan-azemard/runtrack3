@@ -135,3 +135,39 @@ $('#buttonalpha').click( function()
     	$('#para').append(text[increment]);
 
 });
+
+
+/*Mettre en active*/
+function active(value)  /*Value = l'id du ul cliqué . Pas réussi à la récup autrement */
+{
+		relo = $('.relo')
+
+		relo.css("background-color", "white")  /*Réinisitalise toutes les class relo (tout les ul)*/
+
+
+		relo.css("color", "black")
+
+
+		act1 = value						/*Passe en couleur celui cliqué*/
+
+		act1.css("background-color", "#0D6EFD")
+		act1.css("color", "white")
+
+}
+/*
+function r(){
+		location.reload()
+	}
+
+
+$('#11').click( function(){
+
+	r();
+	active(value);
+
+})
+
+*/
+
+
+

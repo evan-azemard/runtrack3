@@ -114,7 +114,7 @@
                   <a class="page-link" href="#" aria-label="Previous">
                     <span aria-hidden="true">&laquo;</span>
                   </a>
-                </li> <!--Barre-->
+                </li> <!--Cette pagination est le contenue de mon choix. Les citation mais dans un ordre.-->
                   <button class="page-link page-item"  id="parabutton1">1</button>
                   <button class="page-link page-item"  id="parabutton2">2</button>
                   <button class="page-link page-item"  id="parabutton3">3</button>
@@ -134,19 +134,19 @@
         <!--Les onglet-->
         <div>
             <ul class="list-group">
-                  <li class="list-group-item active">Limbes</li>
-                  <li class="list-group-item">Luxure</li>
-                  <li class="list-group-item">Gourmandise</li>
-                  <li class="list-group-item">Avarice</li>
-                  <li class="list-group-item">Colere</li>
-                  <li class="list-group-item">Heresie</li>
-                  <li class="list-group-item">Violence</li>
-                  <li class="list-group-item">Ruse et tromperie</li>
-                  <li class="list-group-item">Trahison</li>
-                  <li class="list-group-item">Internet Explorer</li>
+                <li id="11" onclick="active($('#11'))" class="list-group-item relo">Limbes</li>
+                <li  id="22" onclick="active($('#22'))" class="list-group-item relo">Luxure</li>
+                <li id="33" onclick="active($('#33'))" class="list-group-item relo">Gourmandise</li>
+                <li id="44" onclick="active($('#44'))" class="list-group-item relo">Avarice</li>
+                <li id="55" onclick="active($('#55'))" class="list-group-item relo">Colere</li>
+                <li id="66" onclick="active($('#66'))" class="list-group-item relo">Heresie</li>
+                <li id="77" onclick="active($('#77'))" class="list-group-item relo">Violence</li>
+                <li id="88" onclick="active($('#88'))" class="list-group-item relo">Ruse et tromperie</li>
+                <li id="99" onclick="active($('#99'))" class="list-group-item relo">Trahison</li>
+                <li id="111" onclick="active($('#111'))" class="list-group-item relo">Internet Explorer</li>
             </ul>
         </div>
-</section>
+</section>  <!--La barre de progression-->
       <section style="margin-top: 1.7%">
           <div style="display: flex; justify-content: center; margin-left: 37%">
               <h5>Instalation de AI 9000</h5>
@@ -164,8 +164,10 @@
           </div>
     <div style="display: flex; justify-content: space-around; margin-top: 1.5%">
         <div>
+
                   <!-- affichage form -->
             <h5>Recevez votre copie gratuite d'internet 2!</h5>
+
                 <div class="input-group mb-3" style="width: 25vw;">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">@</span>
