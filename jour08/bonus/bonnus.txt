@@ -1,0 +1,5 @@
+Et pourquoi pas :)  (manque de temps) .
+
+
+Si on rend dans une bdd , on peut donc faire des requette et envoyer la card à la place d'une autre sans actualisation et sans nous prendre
+de la place dans le code
