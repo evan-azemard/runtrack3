@@ -12,8 +12,8 @@
     <title>Materialize</title>
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="blue lighten-4">
+        <nav class="blue lighten-4">
             <ul>
                 <li><a href="index.php">Acceuil</a></li>
                 <li><a href="index.php">Inscription</a></li>
@@ -104,7 +104,7 @@
                     <span>lecture</span>
                 </label>
             </p>
-            <button class="btn waves-effect  brown lighten-2" type="submit" name="action">
+            <button class="btn waves-effect  indigo lighten-3" type="submit" name="action">
                 <i class="material-icons right">Envoyer</i>
             </button>
         </form>
@@ -112,7 +112,7 @@
 
     </main>
     <footer>
-        <nav>
+        <nav class="blue lighten-4">
             <ul>
                 <li><a href="index.php">Acceuil</a></li>
                 <li><a href="index.php">Inscription</a></li>
