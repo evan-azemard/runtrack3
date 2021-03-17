@@ -211,24 +211,46 @@ $('#bp').click( function() {
 })
 
 
-function g()
-{
-mail=$('#exampleInputEmail1').val();
-mmdp=$('#exampleInputPassword1').val();
-/*if(mail!=""&&mmdp!="")
-{*/
-    tab=[
-        "text-danger",
-        "text-secondary",
-        "text-success",
-        "text-warning",
-        "text-info",
-        "text-dark",
-        "text-info",
-        "text-primary"
-        ];
-        x=Math.round(Math.random() * 7);
-        window.document.getElementById("cerc").classList="spinner-border";
-        window.document.getElementById("cerc").classList.add(tab[x]);
+	/*Function pour modifier la couleur du spiner*/
+function g() {
+	mail = $('#exampleInputEmail1').val();
+	mmdp = $('#exampleInputPassword1').val();
+	if (mail != "" && mmdp != "") {
+		tab = [
+			"text-danger",
+			"text-secondary",
+			"text-success",
+			"text-warning",
+			"text-info",
+			"text-dark",
+			"text-info",
+			"text-primary"
+		];
+		x = Math.round(Math.random() * 7);
+		window.document.getElementById("cerc").classList = "spinner-border";
+		window.document.getElementById("cerc").classList.add(tab[x]);
 
+	}
 }
+
+
+
+var string = "";  //Contient rien
+var b = document.body; //Contient le body
+window.addEventListener('keydown', function(event)  //Permet de retenir les touche appuyé en mémoire
+{
+    var key = event.key; //Contient la touche
+    string += key; //ajoute en plus la touche cliqué
+    if(string === "DGC") //Si c'est le même
+    {
+	/*	tab = ["<body onload='document.getElementById('monLien').click();'>"]
+
+		$('body').classList.add(tab[0]);*/
+		$('#exampleModal1').modal('show');  /*Rendre visible le modal*/
+
+
+    }else {
+    	$('#myModal').modal('hide');
+    }
+})
+

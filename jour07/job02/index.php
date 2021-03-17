@@ -218,9 +218,65 @@
             </form>
         </div>
 
+
+          <div class="d-grid gap-2 col-15 mx-auto">
+    </div>
       </section>
+
+
+
+
+<!-- Modal si on appuis au tout début de l'actualisation du site sur DGC en majuscule -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">informations des champs du formulaire</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         <div class="input-group mb-3" style="width: 25vw;">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Login" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3" style="width: 25vw;">
+                    <input type="text" class="form-control" placeholder="Mot de Passe" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon2">@example.com</span>
+                    </div>
+                </div>
+                <label for="basic-url" style="margin-bottom: 1.5%">URL des Internets 2 et 2.1 Beta</label>
+                <div class="input-group mb-3"  style="width: 25vw;">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">DogeCoin</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                    <div class="input-group-append">
+                        <span class="input-group-text">.00</span>
+                    </div>
+                </div>
+                <div class="input-group mb-3"  style="width: 25vw;">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon3">https://133t/ptf/dkwb/berlusconimkt/</span>
+                    </div>
+                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
   </main>
               <script type="text/javascript" src="script.js"></script>
 
   </body>
 </html>
+
+
